@@ -2,48 +2,28 @@
 	"name": "base-project-front",
 	"version": "1.0.0",
 	"private": false,
-	"license": "Apache-2.0",
+	"license": "MIT",
 	"dependencies": {
-		"next": "^11.1.1",
-		"next-i18next": "^8.2.0",
-		"next-sitemap": "^1.6.148",
-		"next-themes": "^0.0.15",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-is": "^17.0.2",
-		"styled-components": "^5.0.0"
+		"next": "^12.3.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"styled-components": "^5.3.6"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.14.0",
-		"@techmmunity/eslint-config": "^5.0.0",
-		"@testing-library/jest-dom": "^5.12.0",
-		"@testing-library/react": "^11.2.6",
-		"@types/jest": "^26.0.23",
-		"@types/node": "^12.0.12",
-		"@types/react": "^17.0.4",
-		"@types/react-dom": "^16.8.4",
-		"@types/styled-components": "^5.0.1",
-		"babel-jest": "^26.6.3",
-		"babel-plugin-styled-components": "^1.10.0",
-		"eslint": "^7.27.0",
-		"husky": "^6.0.0",
-		"jest": "^26.6.3",
-		"lint-staged": "^11.1.2",
-		"prettier": "^2.3.0",
-		"ts-jest": "^26.5.5",
-		"ts-node": "^9.1.1",
-		"typescript": "^4.2.4"
+		"@techmmunity/eslint-config": "^5.2.4",
+		"@types/node": "^18.11.3",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"@types/styled-components": "^5.1.26",
+		"eslint": "^8.26.0",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4"
 	},
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"postbuild": "next-sitemap --config sitemap-generator.js",
 		"start": "next start",
-		"test": "jest",
-		"test:watch": "jest --watch",
-		"test:cov": "jest --coverage",
-		"husky:pre-commit": "tsc && lint-staged",
-		"temp:test-tsc": "tsc",
-		"format": "eslint src --fix --quiet"
+		"lint": "eslint . --quiet",
+		"type-check": "tsc"
 	}
 }

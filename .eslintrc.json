@@ -1,8 +1,8 @@
 {
 	"root": true,
+	"plugins": ["eslint-plugin-import-helpers"],
 	"extends": [
 		"@techmmunity/eslint-config/common",
-		"@techmmunity/eslint-config/jest",
 		"@techmmunity/eslint-config/ts-nextjs"
 	],
 	"rules": {
@@ -10,29 +10,8 @@
 			"warn",
 			{
 				"newlinesBetween": "always",
-				"groups": [
-					"/next/",
-					"/react/",
-					"/styled-components/",
-					"module",
-					"/pages/",
-					"/web/components/",
-					"/components/",
-					"/contexts/",
-					"/hooks/",
-					"/assets/",
-					"/configs/",
-					"/helpers/",
-					"/layouts/",
-					"/utils/",
-					"/types/",
-					"/styles/",
-					["parent", "sibling", "index"]
-				],
-				"alphabetize": {
-					"order": "asc",
-					"ignoreCase": true
-				}
+				"groups": ["module", ["parent", "sibling", "index"]],
+				"alphabetize": { "order": "asc", "ignoreCase": true }
 			}
 		]
 	}

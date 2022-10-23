@@ -1,7 +1,8 @@
-import { LayoutsEnum } from "types/enums/layouts";
+import type { LayoutsEnum } from "types/enums/layouts";
 
 export interface Layout {
 	layout?: LayoutsEnum;
 }
 
-export type FCWithLayout = FC & Layout;
+export type FCWithLayout<Props = Record<string, any>> = Layout &
+	((props: Props) => JSX.Element);
