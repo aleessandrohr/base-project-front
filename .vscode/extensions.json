@@ -1,18 +1,16 @@
 {
 	"recommendations": [
 		"formulahendry.auto-rename-tag",
-		"coenraads.bracket-pair-colorizer-2",
 		"streetsidesoftware.code-spell-checker-portuguese-brazilian",
 		"streetsidesoftware.code-spell-checker",
 		"naumovs.color-highlight",
 		"editorconfig.editorconfig",
-		"irongeek.vscode-env",
-		"dbaeumer.vscode-eslint",
 		"eamodio.gitlens",
 		"pkief.material-icon-theme",
 		"esbenp.prettier-vscode",
-		"gruntfuggly.todo-tree",
 		"visualstudioexptteam.vscodeintellicode",
-		"jpoissonnier.vscode-styled-components"
+		"irongeek.vscode-env",
+		"dbaeumer.vscode-eslint",
+		"styled-components.vscode-styled-components"
 	]
 }
