@@ -16,6 +16,8 @@
 		"@types/react-dom": "^18.0.6",
 		"@types/styled-components": "^5.1.26",
 		"eslint": "^8.26.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
 		"prettier": "^2.7.1",
 		"typescript": "^4.8.4"
 	},
@@ -23,7 +25,9 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
+		"husky:pre-commit": "lint-staged && tsc",
 		"lint": "eslint . --quiet",
+		"format": "eslint src --fix --quiet",
 		"type-check": "tsc"
 	}
 }
