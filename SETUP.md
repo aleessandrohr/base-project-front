@@ -11,6 +11,7 @@
 
 - [ ] Change the project name on `package.json`
 - [ ] Change `name` and `url` of SITE from `src/configs/site.ts`
+- [ ] Change the code owners on `.github/CODEOWNERS`
 - [ ] Add project to [CodeFactor](https://www.codefactor.io)
 - [ ] Add project to [DeepScan](https://deepscan.io/dashboard/#view=team&tid=13883)
 - [ ] Update the `title` and `badges` of `README.md`
