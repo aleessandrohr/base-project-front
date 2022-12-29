@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
 		background: ${COLORS.background};
 		color: ${COLORS.firstText};
 		font-family: 'Roboto', sans-serif;
-		${FONTS.heading4}
+		${FONTS.text1}
 	}
 
 	a {
